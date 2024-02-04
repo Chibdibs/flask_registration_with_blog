@@ -1,0 +1,36 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [05/Feb/2024 03:39:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:13] "GET /static/javascript/index.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:13] "GET /static/css/landing.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Feb/2024 03:39:51] "GET /registration HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:51] "[36mGET /static/javascript/index.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Feb/2024 03:39:51] "GET /static/css/register.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:51] "GET /static/python-snake.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:58] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:58] "[36mGET /static/javascript/index.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Feb/2024 03:39:58] "GET /static/login-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:58] "GET /static/css/sign-in.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [05/Feb/2024 03:39:59] "[32mGET /index HTTP/1.1[0m" 308 -
+127.0.0.1 - - [05/Feb/2024 03:39:59] "GET /index/ HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:59] "GET /static/css/index.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:59] "GET /static/coding1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:59] "GET /static/flower1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:39:59] "[36mGET /static/javascript/index.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Feb/2024 03:39:59] "GET /static/python1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:07] "GET /blogs HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:07] "GET /static/snake1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:07] "GET /static/css/blogs.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:07] "GET /static/snake2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:07] "[36mGET /static/javascript/index.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Feb/2024 03:40:07] "GET /static/snake3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:11] "GET /index/ HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:12] "GET /links HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:12] "[36mGET /static/javascript/index.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Feb/2024 03:40:12] "GET /static/css/links.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:17] "GET /about HTTP/1.1" 200 -
+127.0.0.1 - - [05/Feb/2024 03:40:17] "[36mGET /static/javascript/index.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Feb/2024 03:40:17] "GET /static/css/about.css HTTP/1.1" 200 -

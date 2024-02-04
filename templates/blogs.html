@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Links Page{% endblock title %}
+
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blogs.css') }}">
+</head>
+<body>
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="/index" class="navbar-brand d-flex align-items-center">
+                <strong>Home Page</strong>
+            </a>
+            <a href="/logout" class="btn btn-secondary my-2">Log Out</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container marketing">
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">A Concerning Python Fact: <span class="text-muted">They're an Invasive Species in the U.S.</span>
+                </h2>
+                <p class="lead">These big, non-venomous snakes can range from 23 inches to 33 feet in length, and they can weigh from 7 ounces to 250 pounds. Pythons Swallow Their Prey Whole. Reticulated Pythons Can Eat Fully Grown Humans.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                     height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                     preserveAspectRatio="xMidYMid slice" focusable="false"
+                     src="{{ url_for('static', filename='snake1.jpg') }}">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Baby Pythons Survive on Their <span class="text-muted">Own When They Hatch.</span>
+                </h2>
+                <p class="lead">Pythons live in a wide range of habitats, depending on the species, but many seek shelter in trees and can hold onto branches with their tails. These vestigial limbs look like spurs on either side of the cloaca.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                     height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                     preserveAspectRatio="xMidYMid slice" focusable="false"
+                     src="{{ url_for('static', filename='snake2.jpg') }}">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Pythons Are Constrictor Snakes  <span
+                        class="text-muted">with No Venom.</span></h2>
+                <p class="lead">Pythons are considered a primitive snake differing from many other species by having two functioning lungs and vestigial, or left over, hind limbs. These snakes kill their prey by suffocation, not venom.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                     height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                     preserveAspectRatio="xMidYMid slice" focusable="false"
+                     src="{{ url_for('static', filename='snake3.jpg') }}">
+                </svg>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+    </div>
+</main>
+</body>
+{% endblock content %}

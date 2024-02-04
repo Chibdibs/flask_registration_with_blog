@@ -1,0 +1,11 @@
+SQLAlchemy==2.0.5.post1
+flask_sqlalchemy==3.0.3
+greenlet==2.0.2
+
+flask_login==0.6.2
+
+Not installed/needed
+bcrypt==4.0.1
+flask_bcrypt==1.0.1
+flask~=3.0.2
+werkzeug~=3.0.1

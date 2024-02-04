@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+
+{% block title %}Home Page{% endblock title %}
+
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="/index" class="navbar-brand d-flex align-items-center">
+                <strong>Home Page</strong>
+            </a>
+            <a href="/logout" class="btn btn-secondary my-2">Log Out</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <strong><h1 class="fw-light">List of Webpages</h1></strong>
+                <p class="lead text-muted">
+                    <strong><span><b>Date:</b> {{date.strftime('%m/%d/%Y')}} <b>Time:</b> <span
+                            id="time">00:00:00</span></span></strong>
+                    <br>
+                    Here is an updated list of webpages with src images and new descriptions for each page along with
+                    the date and time.
+                </p>
+                <p>
+                    <a href="/password-reset" class="btn btn-primary my-2">Reset Password</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                             preserveAspectRatio="xMidYMid slice" focusable="false"
+                             src="{{ url_for('static', filename='coding1.jpg') }}">
+                        <div class="card-body">
+                            <h5 class="card-title">Links</h5>
+                            <p class="card-text">This link directs you to a page that shows a <strong>table</strong>
+                                with <strong>four</strong> links to
+                                learn more about Python programming.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="/links" class="btn btn-primary">Links Page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                             preserveAspectRatio="xMidYMid slice" focusable="false"
+                             src="{{ url_for('static', filename='flower1.jpg') }}">
+                        <div class="card-body">
+                            <h5 class="card-title">Blogs</h5>
+                            <p class="card-text">This link directs you to a page that shows <strong>three
+                                images</strong> of
+                                Python snakes
+                                and a brief description about them.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="/blogs" class="btn btn-primary">Blogs Page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                             preserveAspectRatio="xMidYMid slice" focusable="false"
+                             src="{{ url_for('static', filename='python1.jpg') }}">
+                        <div class="card-body">
+                            <h5 class="card-title">About</h5>
+                            <p class="card-text">This link directs you to a page to learn more about me, the creator and
+                                designer of this simple <strong>Lab8</strong> website for <strong>SDEV300</strong>.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="/about" class="btn btn-primary">About Page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+        </p>
+    </div>
+</footer>
+</body>
+
+
+{% endblock content %}

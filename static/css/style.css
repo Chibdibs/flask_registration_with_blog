@@ -1,0 +1,12 @@
+html, body {
+    justify-content: center;
+    display: flex;
+    background-color: slategray;
+}
+
+.div-content{
+    background-color: cornsilk;
+    padding: 7px 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Links Page{% endblock title %}
+
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="/index" class="navbar-brand d-flex align-items-center">
+                <strong>Home Page</strong>
+            </a>
+            <a href="/logout" class="btn btn-secondary my-2">Log Out</a>
+        </div>
+    </div>
+</header>
+<main>
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">About Me</h1>
+                <p class="col-md-8 fs-4">Hi, I'm Nino Ross and this website was custom made by me using Bootstrap and
+                    various other resources
+                    for the UMGC SDEV300 course. It is a simple light-weight Flask website built for Lab8.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-bg-dark rounded-3">
+                    <h2>My Github</h2>
+                    <p>Here you will see the list of projects I've done and am working on.</p>
+                    <a class="btn btn-outline-light" type="button" href="https://github.com/Chibdibs">Github Repo</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <h2>My LeetCode</h2>
+                    <p>This is a link to my LeetCode profile.</p>
+                    <a class="btn btn-outline-secondary" type="button" href="https://leetcode.com/Chibdibs/">LeetCode</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+</body>
+{% endblock content %}
